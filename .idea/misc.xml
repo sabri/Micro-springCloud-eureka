@@ -3,7 +3,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/movie_catalog/pom.xml" />
         <option value="$PROJECT_DIR$/movie-info-api/pom.xml" />
         <option value="$PROJECT_DIR$/rate-movie-api/pom.xml" />
         <option value="$PROJECT_DIR$/discovery-server/pom.xml" />

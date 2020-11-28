@@ -9,9 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="movie-info-api" />
         <module name="rate-movie-api" />
-        <module name="movie_catalog" />
         <module name="discovery-server" />
-        <module name="movie-catalog-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
