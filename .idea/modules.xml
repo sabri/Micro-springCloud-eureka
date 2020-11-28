@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Micro-level-springcloud.iml" filepath="$PROJECT_DIR$/.idea/Micro-level-springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-catalog/movie-catalog.iml" filepath="$PROJECT_DIR$/movie-catalog/movie-catalog.iml" />
       <module fileurl="file://$PROJECT_DIR$/movie-info-api/movie-info-api.iml" filepath="$PROJECT_DIR$/movie-info-api/movie-info-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/rate-movie-api/rate-movie-api.iml" filepath="$PROJECT_DIR$/rate-movie-api/rate-movie-api.iml" />
     </modules>

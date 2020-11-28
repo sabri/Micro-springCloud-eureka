@@ -9,11 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="movie-info-api" />
         <module name="rate-movie-api" />
+        <module name="movie-catalog" />
         <module name="discovery-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="discovery-server" target="11" />
+      <module name="movie-catalog" target="11" />
       <module name="movie-catalog-api" target="11" />
       <module name="movie-info-api" target="11" />
       <module name="movie_catalog" target="11" />
@@ -23,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="discovery-server" options="-parameters" />
+      <module name="movie-catalog" options="-parameters" />
       <module name="movie-catalog-api" options="-parameters" />
       <module name="movie-info-api" options="-parameters" />
       <module name="movie_catalog" options="-parameters" />
