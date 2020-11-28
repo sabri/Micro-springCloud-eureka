@@ -1,19 +1,19 @@
-package com.sabrouch.movie_catalog.module;
+package com.sabrouch.moviecatalogapi.module;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Created by sabrouch.
- * Date: 11/13/2020
- */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class Rating {
-    private String movieId;
+public class CatlogMovie {
+
+    private String name;
+    private String desc;
     private int rating;
+
+
 }
