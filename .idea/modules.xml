@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Micro-level-springcloud.iml" filepath="$PROJECT_DIR$/.idea/Micro-level-springcloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-catalog-api/movie-catalog-api.iml" filepath="$PROJECT_DIR$/movie-catalog-api/movie-catalog-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-info-api/movie-info-api.iml" filepath="$PROJECT_DIR$/movie-info-api/movie-info-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie_catalog/movie_catalog.iml" filepath="$PROJECT_DIR$/movie_catalog/movie_catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rate-movie-api/rate-movie-api.iml" filepath="$PROJECT_DIR$/rate-movie-api/rate-movie-api.iml" />
+    </modules>
+  </component>
+</project>
