@@ -17,21 +17,23 @@ import java.util.List;
 @RestController
 @RequestMapping("/rate")
 public class RateController {
-    @RequestMapping("/{movieId}")
+    @RequestMapping("/movies/{movieId}")
     public Rating getRating(@PathVariable("movieId") String movieId) {
-        return new Rating(movieId, 4);
+        return new Rating(movieId, 100);
     }
 
-    @RequestMapping("user/{userId}")
+    @RequestMapping("/users/{userId}")
     public UserRating getUserRating (@PathVariable("userId") String userId){
-        List<Rating> ratings= Arrays.asList(
+       /* List<Rating> ratings= Arrays.asList(
                 new Rating("123", 4),
                 new Rating("13", 3),
                 new Rating("1234", 5)
 
         );
+
+        */
         UserRating userRating = new UserRating();
-        userRating.setUserRating(ratings);
+        userRating.initData(userId);
         return userRating;
     }
 }

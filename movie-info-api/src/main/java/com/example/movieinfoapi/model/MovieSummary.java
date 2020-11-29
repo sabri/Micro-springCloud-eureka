@@ -1,22 +1,20 @@
-package com.sabrouch.moviecatalog.module;
+package com.example.movieinfoapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 /**
  * Created by sabrouch.
- * Date: 11/16/2020
+ * Date: 11/29/2020
  */
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserRating {
-    private String userId;
-    private List<Rating> userRating;
+public class MovieSummary {
+    private String id;
+    private String title;
+    private String overview;
 }

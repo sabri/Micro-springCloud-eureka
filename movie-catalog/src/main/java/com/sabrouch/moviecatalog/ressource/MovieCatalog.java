@@ -19,13 +19,13 @@ public class MovieCatalog {
 
     private final RestTemplate restTemplate;
   //private final WebClient.Builder webClientBuilder;
-    public MovieCatalog(RestTemplate restTemplate, WebClient.Builder webClientBuilder) {
+    public MovieCatalog(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
 
 
     @RequestMapping("/{userId}")
-    public List<CatlogMovie> getCatalog(@PathVariable String userId) {
+    public List<CatlogMovie> getCatalog(@PathVariable("userId") String userId) {
         //get all movie
 
 /*
@@ -37,13 +37,13 @@ public class MovieCatalog {
         );
         */
 //singletonList return immutable List serializable
-        UserRating rating = restTemplate.getForObject("http://localhost:8086/rate/user" +userId,
-                UserRating.class);
+        UserRating ratings = restTemplate.getForObject("http://RATE-MOVIE-API/rate/users/" + userId, UserRating.class);
 
-        return rating.getUserRating().stream()
-                .map(rating1 -> { Movie movie = restTemplate.getForObject("http://localhost:8087/info/1" + rating1.getMovieId(), Movie.class);
+        return ratings.getUserRating()
+                .stream()
+                .map(rating -> { Movie movie = restTemplate.getForObject("http://MOVIE-INFO-API/info/" +rating.getMovieId(), Movie.class);
 
-                            return new CatlogMovie(movie.getName(), "desc", rating1.getRating());
+                            return new CatlogMovie(movie.getName(), "desc", rating.getRating());
 
                         }
 
@@ -51,6 +51,10 @@ public class MovieCatalog {
                 )
                 .collect(Collectors.toList());
     }
-
+/*
+Alternative WebClient way
+Movie movie = webClientBuilder.build().get().uri("http://localhost:8082/movies/"+ rating.getMovieId())
+.retrieve().bodyToMono(Movie.class).block();
+*/
 
 }
