@@ -1,4 +1,4 @@
-package com.sabrouch.moviecatalog.module;
+package com.sabrouch.moviecatalog.ressource;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
